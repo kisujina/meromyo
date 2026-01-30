@@ -1,0 +1,30 @@
+body { font-family: 'sans-serif'; background: #2c3e50; color: white; text-align: center; }
+.hidden { display: none; }
+#app { max-width: 600px; margin: 0 auto; padding: 20px; }
+
+/* 입장 화면 */
+#login-screen { background: #34495e; padding: 30px; border-radius: 10px; }
+input { padding: 10px; margin: 5px; width: 80%; border: none; border-radius: 5px; }
+button { padding: 10px 20px; cursor: pointer; background: #3498db; color: white; border: none; border-radius: 5px; font-weight: bold; }
+button:hover { background: #2980b9; }
+
+/* 게임 화면 */
+.info-bar { margin-bottom: 20px; background: #1a252f; padding: 10px; border-radius: 5px; }
+#party-list { margin-bottom: 15px; font-weight: bold; color: #f1c40f; }
+
+.floor-row { display: flex; align-items: center; justify-content: center; margin-bottom: 8px; }
+.floor-label { width: 40px; font-weight: bold; color: #bdc3c7; }
+.platforms { display: flex; gap: 10px; }
+
+.platform {
+    width: 60px; height: 40px; border: 2px solid #ecf0f1; background: white;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    color: transparent; font-size: 12px; border-radius: 4px;
+}
+
+/* 색상 규칙 */
+.platform.my-pick { background: #3498db !important; color: white !important; } /* 파란색 */
+.platform.other-pick { background: #2c3e50 !important; color: white !important; border-color: #7f8c8d; } /* 검정색(어두운회색) */
+.platform.disabled { cursor: not-allowed; opacity: 0.8; }
+
+#btn-reset { background: #e74c3c; margin-left: 10px; }
