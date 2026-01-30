@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로미오 발판 헬퍼</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>🍁 로미오 발판 헬퍼</h1>
+        
+        <div id="login-screen">
+            <input type="text" id="room-name" placeholder="방 이름 입력">
+            <input type="text" id="user-name" placeholder="내 닉네임 입력">
+            <button id="btn-join">방 만들기 / 입장</button>
+        </div>
+
+        <div id="game-screen" class="hidden">
+            <div class="info-bar">
+                <span id="display-room-name"></span> | 
+                <span id="display-user-count">대기 중...</span>
+                <button id="btn-reset">발판 초기화</button>
+            </div>
+
+            <div id="party-list"></div>
+
+            <div id="platforms-container">
+                </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
